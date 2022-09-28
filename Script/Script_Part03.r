@@ -105,8 +105,9 @@ qplot(x)
 
 ## -------------------------------------------------------------------- ##
 # data에 mpg, x축에 hwy 변수 지정하여 그래프 생성
+# str(mpg)
+# summary(mpg)
 qplot(data = mpg, x = hwy)
-
 
 # x축 cty
 qplot(data = mpg, x = cty)

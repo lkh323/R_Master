@@ -37,6 +37,9 @@ df_midterm
 install.packages("readxl")
 library(readxl)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path)) # 작업폴더 설정
+getwd()   # 확인
+
 df_exam <- read_excel("../Data/excel_exam.xlsx")  # 엑셀 파일을 불러와서 df_exam에 할당
 df_exam                                   # 출력
 
